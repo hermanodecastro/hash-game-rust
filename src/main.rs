@@ -7,7 +7,7 @@ mod game;
 use crate::board::Board;
 use crate::player::Player;
 use crate::symbol::Symbol;
-use game::Game;
+use crate::game::Game;
 
 use std::io::Write;
 
