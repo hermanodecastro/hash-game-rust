@@ -6,7 +6,7 @@ pub struct Game {
 }
 
 impl Game {
-	pub fn play(&mut self, player: &Player, row: usize, col: usize) -> () { //Implementar Result para o caso da entrada ser invalida
+	pub fn play(&mut self, player: &Player, row: usize, col: usize) -> () { 
 		match player.symbol {
 			Symbol::O => self.board[row][col] = String::from("O"),
 			Symbol::X => self.board[row][col] = String::from("X")
