@@ -1,7 +1,6 @@
 use crate::player::Player;
 use crate::symbol::Symbol;
 
-// Erro: board é uma struct que contem um dado board, portanto deveria ser board.board[i][j]
 pub struct Game {
 	pub board: [[String; 3]; 3]
 }
