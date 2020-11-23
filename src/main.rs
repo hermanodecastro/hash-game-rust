@@ -19,10 +19,11 @@ fn main() {
 
 	utils::clear();
 
-	print!("Player 1: ");
+	print!("Enter the Player 1 name: ");
 	std::io::stdout().flush().unwrap();
 	let player1_name = utils::read();
-	print!("Player 2: ");
+	
+	print!("Enter the Player 2 name: ");
 	std::io::stdout().flush().unwrap();
 	let player2_name = utils::read();
 
