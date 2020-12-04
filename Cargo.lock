@@ -3,3 +3,12 @@
 [[package]]
 name = "hash-game"
 version = "0.1.0"
+dependencies = [
+ "reader",
+]
+
+[[package]]
+name = "reader"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3f8a80b23f89b22f4b8e2948b9151b1557c80d4ce3824f4ffbadfe9b342c82cb"
