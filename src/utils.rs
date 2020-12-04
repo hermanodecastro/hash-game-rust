@@ -1,5 +1,4 @@
 use std::process::Command;
-use std::io;
 
 pub fn clear() -> () {
 	if cfg!(windows) {
@@ -7,16 +6,6 @@ pub fn clear() -> () {
 	} else {
 	    let _ = Command::new("sh").arg("-c").arg("clear").status();
 	}
-}
-
-pub fn read() -> String {
-	let mut name = String::new();
-
-    io::stdin()
-        .read_line(&mut name)
-        .expect("Failed to read line");
-
-    return name
 }
 
 pub fn parse_error_msg(arg: String) -> () {
