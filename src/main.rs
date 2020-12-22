@@ -40,10 +40,10 @@ fn main() {
 			println!("IT'S YOUR TURN {}\n\n", player1.name.to_uppercase());
 			let row = int(input("Row: ")).unwrap_or(STRING) as usize;
 			if row != STRING as usize {
-				if row >= 0 && row <= 2 {
+				if row as isize >= 0  && row <= 2 {
 					let col = int(input("Col: ")).unwrap_or(STRING) as usize;
 					if col != STRING as usize {
-						if col >= 0 && col <= 2 {
+						if col as isize >= 0 && col <= 2 {
 							if game.position_occupied(row, col) {
 								utils::position_occupied_error_msg(row, col);
 							} else {
@@ -76,10 +76,10 @@ fn main() {
 			println!("IT'S YOUR TURN {}\n\n", player2.name.to_uppercase());
 			let row = int(input("Row: ")).unwrap_or(STRING) as usize;
 			if row != STRING as usize {
-				if row >= 0 && row <= 2 {
+				if row as isize >= 0 && row <= 2 {
 					let col = int(input("Col: ")).unwrap_or(STRING) as usize;
 					if col != STRING as usize{
-						if col >= 0 && col <= 2 {
+						if col as isize >= 0 && col <= 2 {
 							if game.position_occupied(row, col) {
 								utils::position_occupied_error_msg(row, col);
 							} else {
