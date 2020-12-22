@@ -18,7 +18,7 @@ impl Game {
 			Symbol::O => String::from("O"),
 			Symbol::X => String::from("X")
 		};
-		let mut primary_diagonal = 0;
+		let mut main_diagonal = 0;
 		let mut secondary_diagonal = 0;
 		for i in 0..3 {
 			let mut row = 0;
@@ -31,13 +31,13 @@ impl Game {
 					col += 1;
 				}
 				if i == j && self.board[i][j] == symbol {
-					primary_diagonal += 1; 
+					main_diagonal += 1; 
 				}
 				if j == (2 - i) && self.board[i][j] == symbol {
 					secondary_diagonal += 1
 				}
 			}
-			if row == 3 || col == 3 || primary_diagonal == 3 || secondary_diagonal == 3 {
+			if row == 3 || col == 3 || main_diagonal == 3 || secondary_diagonal == 3 {
 				return true;
 			}
 		}
