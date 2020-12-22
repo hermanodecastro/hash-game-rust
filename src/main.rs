@@ -3,6 +3,7 @@ mod player;
 mod symbol;
 mod utils;
 mod game;
+mod tests;
  
 use crate::board::Board;
 use crate::player::Player;
